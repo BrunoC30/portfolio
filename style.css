@@ -1,0 +1,112 @@
+*{
+    padding:0;
+    margin:0;
+}
+:root{
+    --textPrimary:#FFFFFF;
+    --textSecondary:#E2E2FF;
+    --hiddenText:#8E99A1;
+    
+    --otherTexts:#494B72;
+    --button:#9CBCEB;
+
+    --header:#384559;
+    --background:#2E313A;
+
+    --cards:#3E4557;
+    --cardbutton:#4E5973;
+}
+.nunito-sans-teste {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    background-color: var(--background);
+    color:var(--textPrimary);
+    
+}
+header{
+    background-color: var(--header);
+    height: 5.25rem;
+    display:flex;
+    align-items: center;
+    padding:0 30px 0 30px;
+}
+.divisor{
+    display:flex;
+    flex:1;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    padding: 0 60px 0 60px
+}
+.btao{
+    height: 60px;
+    width: 180px;
+    border-radius: 16px;
+    background-color: var(--button);
+    color:var(--otherTexts);
+    font-weight: 700;
+    font-size: 1.6rem;
+    border: none;
+}
+main{
+    padding: 40px 0 0 0;
+    display:flex;
+    flex-direction: column;
+    gap:40px;
+}
+#perfil{
+    display:flex;
+    flex-direction: row;
+    gap:1rem;
+}
+.pfp{
+    display: flex;
+    flex-direction: column;
+}
+#foto{
+    background-color: var(--cards);
+    border-radius: 100%;
+    height: 150px;
+    width: 150px;
+}
+#bgicones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 155px;
+    height: 46px;
+    background-color: var(--cards);
+    position: absolute;
+    top:14.8rem;
+    box-shadow: -8px -8px 10px #0000005e;
+    gap:5px;
+}
+#bgicones img{
+    height: 37px;
+    width: auto;
+}
+.infosPerfil{
+    display: flex;
+    flex-direction: column;
+}
+#sobremim{
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+    gap:20px;
+    background-color: var(--cards);
+    padding: 40px 20px 40px 20px;
+}
+#sobremim p{
+    color:var(--textSecondary);
+}
