@@ -1,8 +1,51 @@
-@media(max-width:700px){
+@media(max-width:900px){
+  header{
+    font-size: 0.9rem;
+  }
  .center{
     padding: 0 10% 0 10%;
  }
+ .btao{
+   height: 35px;
+   font-size: 1.5rem;
+ }
+ #foto{
+  height: 130px;
+  width: 130px;
+ }
   #sobremim{
     width: 90%;
+  }
+  #bgicones{
+    width: 135px;
+    height: 42px;
+    top:13.7rem;
+  }
+  #bgicones img{
+    height: 30px;
+  }
+  #paiGeral{
+    flex-direction: column;
+    align-items: center;
+  }
+  #projetos{
+  flex-direction: column;
+   width: 80%;
+   
+  }
+  .barra{
+    border-left: none;
+  }
+  #containerProjetos{
+    flex:1;
+    gap:10px;
+    padding: 40px 20px 40px 20px;
+    margin:0;
+  }
+  .cards{
+   flex-direction: row;
+  }
+  .cardP{
+    height: 100px;
   }
 }
