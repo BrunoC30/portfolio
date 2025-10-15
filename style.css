@@ -5,10 +5,12 @@
 :root{
     --textPrimary:#FFFFFF;
     --textSecondary:#E2E2FF;
+    --secondActive:#cbb8ff;
     --hiddenText:#8E99A1;
     
     --otherTexts:#494B72;
     --button:#9CBCEB;
+    --activeButton:#7aacf8;
 
     --header:#384559;
     --background:#2E313A;
@@ -54,6 +56,12 @@ header{
     gap:32px;
     flex:1;
 }
+#username{
+    color:var(--hiddenText);
+}
+#frase{
+    color:var(--textSecondary);
+}
 .btao{
     height: 50px;
     width: 160px;
@@ -80,6 +88,8 @@ main{
 }
 #foto{
     background-color: var(--cards);
+    background-size: 100%;
+    background-position:0 -30px;
     border-radius: 100%;
     height: 150px;
     width: 150px;
@@ -132,6 +142,9 @@ main{
     padding: 0 0 20px 0;
     overflow-y: auto;
 }
+#containerProjetos h1{
+    margin: 0 0 10px 0;
+}
 .barra{
     border-left: 3px solid #20222b;
 }
@@ -149,4 +162,50 @@ main{
     flex-direction: column;
     width: 100%;
     gap:20px;
+}
+#verMais{
+    display:none;
+    cursor: pointer;
+    display: flex;
+    position:relative;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cardbutton);
+    border:none;
+    color:var(--textSecondary);
+    font-size: 1rem;
+}
+.click,.cardP,#verMais{
+    transition: transform 0.3s ease;
+}
+.click:hover{
+    transform: scale(1.1);
+}
+.cardP:hover,#verMais:hover{
+    transform: scale(1.05);
+}
+#verMais:hover{
+    color:var(--secondActive);
+}
+.btao:hover{
+    background-color: var(--activeButton);
+}
+/*PROJETOS*/
+.cardP:nth-child(1){
+    background-image: url("./imgs/folhaVerde.png");
+    background-size: cover;
+    background-position: top center;
+}
+.cardP:nth-child(2){
+    background-image: url("./imgs/estudeZen.png");
+    background-size: cover;
+    background-position: top center;
+}
+.cardP:nth-child(3){
+    background-image: url("./imgs/WordTale.png");
+    background-repeat: no-repeat;
+    background-size: 258%;
+    background-position: top center;
 }
