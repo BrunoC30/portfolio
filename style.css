@@ -29,6 +29,7 @@
 }
 body{
     display:flex;
+    height: 100dvh;
     flex-direction: column;
     background-color: var(--background);
     color:var(--textPrimary);
@@ -149,12 +150,16 @@ main{
     border-left: 3px solid #20222b;
 }
 .cardP{
+    cursor: pointer;
     display:flex;
     flex-direction: column;
     width: 90%;
     height: 200px;
     background-color: var(--hiddenText);
     border-radius: 12px;
+}
+.metaDados{
+    display:none;
 }
 .cards{
     align-items: center;
