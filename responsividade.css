@@ -13,8 +13,11 @@
   height: 130px;
   width: 130px;
  }
-  #sobremim{
+  #sobremim,#contato{
     width: 90%;
+  }
+  #contato{
+    box-sizing: content-box;
   }
   #bgicones{
     width: 135px;
@@ -60,5 +63,8 @@
   }
   #verMais{
     display:flex;
+}
+#layer2{
+  height:164dvh
 }
 }

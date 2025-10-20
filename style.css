@@ -29,7 +29,7 @@
 }
 body{
     display:flex;
-    height: 100dvh;
+    min-height: 100dvh;
     flex-direction: column;
     background-color: var(--background);
     color:var(--textPrimary);
@@ -64,6 +64,7 @@ header{
     color:var(--textSecondary);
 }
 .btao{
+    cursor:pointer;
     height: 50px;
     width: 160px;
     border-radius: 16px;
@@ -90,7 +91,6 @@ main{
 #foto{
     background-color: var(--cards);
     background-size: 100%;
-    background-position:0 -30px;
     border-radius: 100%;
     height: 150px;
     width: 150px;
@@ -102,9 +102,7 @@ main{
     width: 155px;
     height: 46px;
     background-color: var(--cards);
-    position: absolute;
-    top:14.8rem;
-    box-shadow: -8px -8px 10px #0000005e;
+    box-shadow: 8px 8px 10px #0000005e;
     gap:5px;
 }
 #bgicones img{
@@ -131,6 +129,7 @@ main{
     flex-direction: column;
     flex:1;
     max-width: 700px;
+    padding: 0 0 20px;
 }
 #containerProjetos{
     display: flex;
@@ -142,6 +141,7 @@ main{
     height: 700px;
     padding: 0 0 20px 0;
     overflow-y: auto;
+    scrollbar-color: var(--cards) var(--cardbutton);
 }
 #containerProjetos h1{
     margin: 0 0 10px 0;
@@ -169,7 +169,6 @@ main{
     gap:20px;
 }
 #verMais{
-    display:none;
     cursor: pointer;
     display: flex;
     position:relative;
@@ -181,6 +180,7 @@ main{
     border:none;
     color:var(--textSecondary);
     font-size: 1rem;
+    display:none;
 }
 .click,.cardP,#verMais{
     transition: transform 0.3s ease;
@@ -213,4 +213,35 @@ main{
     background-repeat: no-repeat;
     background-size: 258%;
     background-position: top center;
+}
+#contato{
+    box-sizing: border-box;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 640px;
+    margin: 40px 0 0 0;
+    padding: 20px 20px 40px 20px;
+    background-color: var(--cards);
+}
+#cardContatos{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+.iconesDeContato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    gap:20px;
+}
+footer{
+    margin: 20px 0 0 0;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height: 40px;
+    background-color: var(--header);
 }

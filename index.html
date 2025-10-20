@@ -9,6 +9,8 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css" />
+
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
 
     <link
@@ -31,6 +33,10 @@
             <div class="textos">
                 <h1>Titulo</h1>
                 <p>Descrição bla bla bla bla bla bla bla bla</p>
+                <a href="" id="linkBtao">
+
+                    <button class="btao click">ver Site</button>
+                </a>
             </div>
         </div>
     </section>
@@ -46,9 +52,11 @@
         <main>
             <div id="perfil">
             <div class="pfp">
-             <div id="foto"></div>
+             <div id="foto">
+
+             </div>
+             <div id="bgicones" class="click" title="ver mais">
              <!--icones -->
-             <div id="bgicones" class="click">
                 
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
             
@@ -72,28 +80,49 @@
                 <p>“Olá me chamo Bruno, sou um estudande de ADS e desenvolvedor web com foco atual no FrontEnd, estou sempre em busca de evolução para trazer a melhor experiência aos clientes”</p>
             </div>
         </main>
-    
+
+    <section id="contato">
+    <div id="cardContatos">
+        <h1>Conecte-se comigo</h1>
+        <div class="iconesDeContato">
+            <a class="linkedin click socialLink" href="https://www.linkedin.com/in/bruno-carvalho-74a2a2337/">
+
+                <i class="iconoir-linkedin socialLink"></i>
+            </a>
+            <a class="zap click socialLink" href="https://wa.me/558596316422?text=Olá%2C%20quero%20saber%20mais%20sobre%20seus%20serviços">
+                <i class="iconoir-whatsapp"></i>
+            </a>
+            <a class="insta click socialLink" href="https://www.instagram.com/brunoc30.dev/?next=%2F">
+                <i class="iconoir-instagram"></i>
+            </a>
+           
+        </div>
+    </div>
+    </section>
+
     </div>
     <div class="barra"></div>
     <section id="projetos">
         <div id="containerProjetos">
             <h1>projetos</h1>
              <div class="cards">
-                 <div class="cardP" id="firstCard" name="Folha verde">
-                    <div class="metaDados">
-                        este é um site de jardinagem fictício
-                    </div>
+
+                 <div class="cardP" id="firstCard" name="Folha verde" data-d="Site simples e responsivo para uma loja de jardinagem fictícia"
+                      data-link="https://brunoc30.github.io/Folha_Verde/">
+                </div>
+
+                 <div class="cardP" id="secondCard" name="Estude Zen" data-d="blog sobre dicas e cuidados saúde mental e educação"
+                      data-link="https://brunoc30.github.io/Estude_Zen/">
                  </div>
-                 <div class="cardP" id="secondCard" name="Estude Zen" >
+
+                 <div class="cardP" id="threeCard" name="WordTale" data-d="jogo da forca funcional, com temática do jogo undertale" 
+                      data-link="https://brunoc30.github.io/WordTale/">
 
                  </div>
-                 <div class="cardP" id="threeCard" name="WordTale" >
-
-                 </div>
-                 <div class="cardP" ></div>
-                 <div class="cardP" ></div>
-                 <div class="cardP" ></div>
-                 <div class="cardP" ></div>
+                 <div class="cardP" name="" data-d=""></div>
+                 <div class="cardP" name="" data-d=""></div>
+                 <div class="cardP" name="" data-d=""></div>
+                 <div class="cardP" name="" data-d=""></div>
              </div>
               <button id="verMais">Ver mais</button>    
                 
@@ -103,7 +132,7 @@
     </section>
 </div>
     <footer>
-
+        Bruno Carvalho. web developer
     </footer>
 <script src="script.js"></script>    
 </body>

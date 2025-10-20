@@ -1,6 +1,6 @@
 #layer2{
     flex-direction: column;
-    height: 100%;
+    min-height: 100dvh;
     width: 100%;
     position:absolute;
     background-color: rgba(0, 0, 0, 0.719);
@@ -15,8 +15,8 @@
     position: absolute;
     z-index: 2;
     background-color: var(--cards);
-    height: 700px;
-    width: 650px;
+    height: 80%;
+    width:60%;
     gap:20px;
 }
 #exitContainer{
@@ -51,11 +51,41 @@
     background-color: var(--background);
     background-repeat: no-repeat;
     background-size: 80%;
-    background-position:  center;
+    background-position:  top center;
 }
 .textos{
     display:flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     gap:20px;
+}
+.textos p{
+    color:var(--textSecondary)
+}
+.textos p::before, .textos p::after{
+content: '"';
+}
+
+.linkedin{
+    display: flex;
+    background-color: rgb(33, 80, 207);
+    border-radius: 12px;
+    padding:2px;
+}
+.zap{
+    display: flex;
+    background-color: #1fb168;
+    border-radius: 12px;
+    padding:2px;
+}
+.insta{
+    display: flex;
+    background-color: #e03a88;
+    color:#fff;
+    padding:2px;
+    border-radius: 12px;
+}
+.socialLink:visited{
+    color:inherit;
 }
