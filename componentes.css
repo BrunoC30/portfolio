@@ -1,16 +1,17 @@
 #layer2{
     flex-direction: column;
-    min-height: 100dvh;
+    height: 100dvh;
     width: 100%;
-    position:absolute;
+    position:fixed;
     background-color: rgba(0, 0, 0, 0.719);
-    z-index: 1;
+    inset:0;
+    z-index: 1000;
     align-items: center;
     justify-content: center;
     display: none;
 }
-#cardViewer{
-    display: flex;
+#cardViewer,#cardSkills{
+    display: none;
     flex-direction: column;
     position: absolute;
     z-index: 2;
@@ -19,15 +20,67 @@
     width:60%;
     gap:20px;
 }
-#exitContainer{
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex:1;
+    gap:10px;
+}
+.tecnologias{
+    display: flex;
+    height: auto;
+    max-height: 5rem;
+    flex-grow: 1;
+    gap:20px;
+    width: 80%;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:14px;
+    border-bottom: solid 4px #20222b;
+}
+.tecnologias img{
+    transition: transform 0.3s ease;
+    height: auto;
+    width: 40px;
+}
+.tecnologias img:hover{
+    transform:scale(1.3);
+}
+.habilidades{
+    user-select: none;
+    display:flex;
+    padding: 20px 0 0 0;
+    width: 90%;
+    height: 80%;
+    align-items: start;
+    justify-content: center;
+    align-content:flex-start;
+    gap:20px;
+    flex-wrap: wrap;
+}
+.habilidades p{
+    background-color: var(--button);
+    padding:6px;
+    border-radius: 24px;
+    color:var(--otherTexts);
+    font-weight: 700;
+    transition: transform 0.4s ease;
+}
+.habilidades p:hover{
+    transform: scale(1.09);
+    background-color: var(--activeButton);
+}
+.exitContainer{
     display: flex;
     height: 60px;
     justify-content: end;
     align-items: center;
     background-color: var(--cardbutton);
 }
-#exit{
+#exit,#exitSkill{
     cursor:pointer;
+    position: absolute;
     margin: 0 20px 0 0;
     height: auto;
     width: 30px;
@@ -37,7 +90,8 @@
     border-radius: 6px;
     transition: transform 0.3s ease;
 }
-#exit:hover{
+
+#exit:hover, #exitSkill:hover{
     transform: scale(1.11);
 }
 
@@ -59,6 +113,11 @@
     align-items: center;
     text-align: center;
     gap:20px;
+}
+#cardTitle{
+    display: flex;
+    flex:1;
+    justify-content: center;
 }
 .textos p{
     color:var(--textSecondary)

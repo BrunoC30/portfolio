@@ -39,7 +39,7 @@
   .barra{
     border-left: none;
   }
-  #containerProjetos{
+  .containerProjetos{
     box-sizing: border-box;
     gap:6px;
     margin:0;
@@ -58,6 +58,12 @@
   .cardP{
     height: 70%;
   }
+  .expandirCards{
+    grid-template-rows: 2fr 2fr 2fr;
+  }
+  .expandirContainerCards{
+    height: 500px;
+  }
   .cardP:hover{
     transform: scale(1.1);
   }
@@ -66,5 +72,13 @@
 }
 #layer2{
   height:164dvh
+}
+.tecnologias img{
+  width: 30px;
+}
+#cardViewer,#cardSkills{
+  top:4rem;
+  height: 50%;
+  padding: 0 0 40px 0;
 }
 }
