@@ -12,6 +12,7 @@ const cardImg = document.querySelector(".image")
 const cardTitulo = document.querySelector("#cardTitle");
 const cardDescricao = document.querySelector(".textos p");
 const linkbtao = document.querySelector("#linkBtao");
+const codebtao = document.querySelector("#codebtao");
 
 //variaveis de card de skills
 const icones = document.querySelector("#bgicones");
@@ -85,7 +86,8 @@ function abrirCards(cardEL){
             cardTitulo.textContent="Sem título"
         }else{
             cardTitulo.textContent = cardEL.getAttribute("name");
-            linkbtao.href= cardEL.dataset.link;
+            linkbtao.href = cardEL.dataset.link;
+            codebtao.href = cardEL.dataset.code;
         }
         if(cardEL.dataset.d===""){
             cardDescricao.textContent="em breve"

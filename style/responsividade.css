@@ -1,13 +1,16 @@
 @media(max-width:900px){
   header{
-    font-size: 0.9rem;
+    font-size: 0.8rem; 
+    gap:5px;
+    padding: 0 20px;
   }
+  
  .center{
     padding: 0 10% 0 10%;
  }
  .btao{
    height: 35px;
-   font-size: 1.5rem;
+   font-size: 1.3rem;
  }
  #foto{
   height: 130px;
@@ -79,6 +82,10 @@
 #cardViewer,#cardSkills{
   top:4rem;
   height: 50%;
+  width: 85%;
   padding: 0 0 40px 0;
+}
+.habilidades p{
+  font-size: 1.04rem;
 }
 }

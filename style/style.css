@@ -40,7 +40,10 @@ header{
     height: 5.25rem;
     display:flex;
     align-items: center;
-    padding:0 30px 0 30px;
+    padding:0 30px
+}
+a{
+    text-decoration: none;
 }
 .divisor{
     display:flex;
@@ -64,15 +67,26 @@ header{
     color:var(--textSecondary);
 }
 .btao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor:pointer;
     height: 50px;
-    width: 160px;
+    width: auto;
+    padding: 0 20px;
     border-radius: 16px;
     background-color: var(--button);
     color:var(--otherTexts);
     font-weight: 700;
     font-size: 1.6rem;
     border: none;
+}
+#codebtao .btao{
+    background-color: #292c33;
+    color:var(--hiddenText);
+}
+#codebtao .btao:hover{
+    color:var(--textPrimary);
 }
 main{
     display:flex;
@@ -185,6 +199,9 @@ main{
 .click,.cardP,#verMais{
     transition: transform 0.3s ease;
 }
+.click{
+    cursor: pointer;
+}
 .click:hover{
     transform: scale(1.1);
 }
@@ -199,17 +216,17 @@ main{
 }
 /*PROJETOS*/
 .cardP:nth-child(1){
-    background-image: url("./imgs/folhaVerde.png");
+    background-image: url("../imgs/folhaVerde.png");
     background-size: cover;
     background-position: top center;
 }
 .cardP:nth-child(2){
-    background-image: url("./imgs/estudeZen.png");
+    background-image: url("../imgs/estudeZen.png");
     background-size: cover;
     background-position: top center;
 }
 .cardP:nth-child(3){
-    background-image: url("./imgs/WordTale.png");
+    background-image: url("../imgs/WordTale.png");
     background-repeat: no-repeat;
     background-size: 258%;
     background-position: top center;
@@ -220,6 +237,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     width: 640px;
     margin: 40px 0 0 0;
     padding: 20px 20px 40px 20px;

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="componentes.css">
-    <link rel="stylesheet" href="responsividade.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/componentes.css">
+    <link rel="stylesheet" href="style/responsividade.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,6 +36,9 @@
                 <a href="" id="linkBtao">
 
                     <button class="btao click">ver Site</button>
+                </a>
+                <a href="" id="codebtao">
+                    <button class="btao click">ver Código</button>
                 </a>
             </div>
         </div>
@@ -80,8 +83,9 @@
                 <h1>habilidades</h1>
                 <div class="habilidades">
                     <p>Criatividade</p>
-                    <p>Adaptabilidade</p>
                     <p>Organização</p>
+                    <p>Adaptabilidade</p>
+                    <p>curiosidade</p>
                     <p>Vontade de aprender</p>
                     <p>Trabalho em equipe</p>
                     <p>comunicação clara</p>
@@ -93,7 +97,7 @@
     <header>
         <h1>BrunoC30.Portfolio</h1>
         <div class="divisor"></div>
-        <a href=""><button class="btao click">Baixar CV</button></a>
+        <a id="cv" href="/curriculo/Bruno_Carvalho_DesenvolvedorWeb.docx.pdf"><button class="btao click">Currículo</button></a>
     </header>
 
 <div id="paiGeral">
@@ -157,15 +161,15 @@
              <div class="cards">
 
                  <div class="cardP" id="firstCard" name="Folha verde" data-d="Site simples e responsivo para uma loja de jardinagem fictícia"
-                      data-link="https://brunoc30.github.io/Folha_Verde/">
+                      data-link="https://brunoc30.github.io/Folha_Verde/" data-code="https://github.com/BrunoC30/Folha_Verde">
                 </div>
 
                  <div class="cardP" id="secondCard" name="Estude Zen" data-d="blog sobre dicas e cuidados saúde mental e educação"
-                      data-link="https://brunoc30.github.io/Estude_Zen/">
+                      data-link="https://brunoc30.github.io/Estude_Zen/" data-code="https://github.com/BrunoC30/Estude_Zen">
                  </div>
 
                  <div class="cardP" id="threeCard" name="WordTale" data-d="jogo da forca funcional, com temática do jogo undertale" 
-                      data-link="https://brunoc30.github.io/WordTale/">
+                      data-link="https://brunoc30.github.io/WordTale/" data-code="https://github.com/BrunoC30/WordTale">
 
                  </div>
                  <div class="cardP" name="" data-d=""></div>
@@ -183,6 +187,7 @@
     <footer>
         Bruno Carvalho. web developer
     </footer>
-<script src="script.js"></script>    
+<script src="script/script.js"></script>    
+<script src="script/anim.js"></script>
 </body>
 </html>
