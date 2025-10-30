@@ -73,7 +73,10 @@ then(data=>{
     console.log(data);
     pfp.style.backgroundImage=`URL(${data.avatar_url})`;
 }).
-catch(err=>console.error(err));
+catch(err=>{
+    console.error(err);
+    pfp.style.backgroundImage="URL(../imgs/perfilAlt.jpg)";
+});
 
 //funções para deixar código clean
 

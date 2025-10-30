@@ -43,6 +43,7 @@ header{
     padding:0 30px
 }
 a{
+    color:var(--textPrimary);
     text-decoration: none;
 }
 .divisor{
