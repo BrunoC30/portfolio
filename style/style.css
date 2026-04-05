@@ -232,6 +232,11 @@ main{
     background-size: 258%;
     background-position: top center;
 }
+.cardP:nth-child(4){
+    background-image: url("https://i.postimg.cc/ncFKcJH8/temporario.png");
+    background-size: cover;
+    background-position: top center;
+}
 #contato{
     box-sizing: border-box;
     height: 20%;
