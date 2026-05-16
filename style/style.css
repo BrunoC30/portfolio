@@ -4,19 +4,19 @@
 }
 :root{
     --textPrimary:#FFFFFF;
-    --textSecondary:#E2E2FF;
-    --secondActive:#cbb8ff;
+    --textSecondary:#7373d8;
+    --secondActive:#4b3683;
     --hiddenText:#8E99A1;
     
-    --otherTexts:#494B72;
-    --button:#9CBCEB;
-    --activeButton:#7aacf8;
+    --otherTexts:#dddffa;
+    --button:#2d3383;
+    --activeButton:#232596;
 
-    --header:#384559;
-    --background:#2E313A;
+    --header:#030913;
+    --background:#000000;
 
-    --cards:#3E4557;
-    --cardbutton:#4E5973;
+    --cards:#080d1a;
+    --cardbutton:#15213d;
 }
 .nunito-sans-teste {
   font-family: "Nunito Sans", sans-serif;
