@@ -60,6 +60,9 @@
    overflow: visible;
    height: 50%;
   }
+  .image{
+    background-size: cover;
+  }
   .cardP{
     height: 90%;
   }

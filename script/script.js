@@ -35,6 +35,8 @@ exitSkill.addEventListener("click",()=>{
 
 //todos os projetos tem lógica de abrir card
 projetos.forEach(card=>{
+    let imgUrl = card.dataset.img;
+    card.style.backgroundImage = `url(${imgUrl})`;
     card.addEventListener("click",()=>{
         //abrir card
         abrirCards(card);
