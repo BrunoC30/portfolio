@@ -216,6 +216,10 @@ main{
     background-color: var(--activeButton);
 }
 /*PROJETOS*/
+
+.image{
+    
+}
 .cardP:nth-child(1){
     background-image: url("../imgs/folhaVerde.png");
     background-size: cover;
@@ -229,7 +233,6 @@ main{
 .cardP:nth-child(3){
     background-image: url("../imgs/WordTale.png");
     background-repeat: no-repeat;
-    background-size: 258%;
     background-position: top center;
 }
 .cardP:nth-child(4){
